@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encoder</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="top container">
+            <div class="acronym">
+                <h1>E.N.C.O.D.E.R.</h1>
+                <h4><strong>E</strong>ncoding <strong>N</strong>onsense and <strong>C</strong>haos <strong>O</strong>perations an<strong>D</strong> <strong>E</strong>ncoded <strong>R</strong>evealer</h4>
+            </div>
+        </div>
+        <div class="container">
+            <form action="#" method="GET" id="userEntry">
+                <select name="actionSelect" id="actionSelect" required>
+                    <option value="encode">Encode</option>
+                    <option value="decode">Decode</option>
+                </select>
+                <br>
+                <div id="secretKeyContainer">
+                    <label for="secretKey" id="secretKeyLabel">Secret Key:</label>
+                    <input type="number" name="secretKey" id="secretKey" value="7" min="0" max="32" required>
+                </div>
+                <div id="textSection">
+                    <textarea name="textField" id="textField" placeholder="Enter your message to encode here..." required></textarea>
+                </div>
+                <div id="goSection" class="container bottom">
+                    <input type="submit" id="go" name="go" value="GO">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
